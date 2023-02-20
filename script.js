@@ -322,7 +322,7 @@ VM.observe(document.body, () => {
                           if (btn) {
                             btn[0].addEventListener("click", () => {
                               const user = document.querySelectorAll("span > span > span > span > span > span.username");
-                              if (user[0].innerText === 'OrbisOne Help Desk') {
+                              if (user[0].innerText === 'Help Desk') {
                                   const categoriesEl = document.querySelectorAll("div.wrapperController > div > div > span > span");
                                   if (categoriesEl) {
                                     if (confirm(`Are the categories correct?\n${categoriesEl[2].innerText} --> ${categoriesEl[3].innerText}`)) {
@@ -342,7 +342,7 @@ VM.observe(document.body, () => {
                                     return true;
                                   }
                               } else {
-                                alert("You must first assign the ticket to OrbisOne");
+                                alert("You must first assign the ticket to Helpdesk");
                               }
                             });
                           }
